@@ -37,7 +37,7 @@
 
       <!-- Subtópico -->
       <div class="block bg-gray-200">
-        <label for="Subtopico" class="form-label mb-2 text-gray-700 px-2 font-bold">Subtópico - ou cadastre um <a routerLink="/inserirDisciplina" class="text-rose-500"> novo</a>: </label>
+        <label for="Subtopico" class="form-label mb-2 text-gray-700 px-2 font-bold">Subtópico - ou cadastre um <a routerLink="/inserirSubTopico" class="text-rose-500"> novo</a>: </label>
         <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="Subtopico" id="Subtopico" [(ngModel)]="this.subTopico.id" (click)="this.subTopicoNome()">
           <option value="">Subtópico</option>
           <option *ngFor="let item of this.listaSubTopicos" value="{{item.id}}">{{item.nome}}</option>
