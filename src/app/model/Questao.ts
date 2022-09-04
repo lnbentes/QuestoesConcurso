@@ -13,6 +13,7 @@ export class Questao{
   public resposta: boolean;
   public explicacao: string;
   public peso: number;
+  
   public banca: Banca;
   public subTopico: SubTopico;
   public are: AreaDeConhecimento;

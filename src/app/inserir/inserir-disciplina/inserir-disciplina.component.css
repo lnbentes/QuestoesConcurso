@@ -5,8 +5,7 @@ h1{
   margin-top: 25px;
 }
 
-/* form{
-  width: 940px;
-  margin: 0 auto;
-  padding: 50px 0;
-} */
+.tamanho{
+  width: 540px;
+  margin: 20px auto;
+}

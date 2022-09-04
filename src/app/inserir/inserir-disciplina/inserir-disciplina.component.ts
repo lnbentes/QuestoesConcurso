@@ -18,15 +18,14 @@ export class InserirDisciplinaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  nome: string
-  disciplina: Disciplina = new Disciplina()
+  public disciplina: Disciplina = new Disciplina();
 
-  post() {
+  public post() {
     this.disciplina.peso = 0;
     this.service.post(this.disciplina).subscribe({next: (resp: Disciplina) => {
-        this.disciplina = resp
-        console.log(this.disciplina);
-        this.router.navigate(["/inserirQuestao"])
+        this.disciplina = resp;
+        alert("Enviada com sucesso!");
+        // this.router.navigate(["/inserirQuestao"]);
       },
       error: erro => {
         if(erro.status == 500 || erro.status == 401 || erro.status == 400){

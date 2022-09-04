@@ -11,16 +11,16 @@
         <label for="Disciplina" class="form-label mb-2 text-gray-700 px-2 font-bold">Disciplina - ou cadastre um <a routerLink="/inserirDisciplina" class="text-rose-500"> novo</a>: </label>
         <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="Disciplina" id="Disciplina" [(ngModel)]="this.nomeDisciplica">
           <option value="">Disciplina</option>
-          <option *ngFor="let item of listaDiciplina" value="{{item.nome}}">{{item.nome}}</option>
+          <option *ngFor="let item of this.listaDiciplina" value="{{item.nome}}">{{item.nome}}</option>
         </select>
       </div>
 
       <!-- Assunto -->
       <div class="block bg-gray-300">
-        <label for="Assunto" class="form-label mb-2 text-gray-700 px-2 font-bold">Assunto - ou cadastre um <a routerLink="/inserirDisciplina" class="text-rose-500"> novo</a>: </label>
-        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="Assunto" id="Assunto" [(ngModel)]="this.nomeAssunto" (click)="assuntoaNome()">
+        <label for="Assunto" class="form-label mb-2 text-gray-700 px-2 font-bold">Assunto - ou cadastre um <a routerLink="/inserirAssunto" class="text-rose-500"> novo</a>: </label>
+        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="Assunto" id="Assunto" [(ngModel)]="this.nomeAssunto" (click)="this.assuntoaNome()">
           <option value="">Assunto</option>
-          <option *ngFor="let item of listaAssunto" value="{{item.nome}}">{{item.nome}}</option>
+          <option *ngFor="let item of this.listaAssunto" value="{{item.nome}}">{{item.nome}}</option>
         </select>
       </div>
     </div>
@@ -29,18 +29,18 @@
       <!-- Topico -->
       <div class="block bg-gray-300">
         <label for="Topico" class="form-label mb-2 text-gray-700 px-2 font-bold">Tópico - ou cadastre um <a routerLink="/inserirDisciplina" class="text-rose-500"> novo</a>: </label>
-        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="Topico" id="Topico" [(ngModel)]="this.nomeTopico" (click)="topicoNome()">
+        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="Topico" id="Topico" [(ngModel)]="this.nomeTopico" (click)="this.topicoNome()">
           <option value="">Tópico</option>
-          <option *ngFor="let item of listaTopicos" value="{{item.nome}}">{{item.nome}}</option>
+          <option *ngFor="let item of this.listaTopicos" value="{{item.nome}}">{{item.nome}}</option>
         </select>
       </div>
 
       <!-- Subtópico -->
       <div class="block bg-gray-200">
         <label for="Subtopico" class="form-label mb-2 text-gray-700 px-2 font-bold">Subtópico - ou cadastre um <a routerLink="/inserirDisciplina" class="text-rose-500"> novo</a>: </label>
-        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="Subtopico" id="Subtopico" [(ngModel)]="this.questao.subTopico" (click)="subTopicoNome()">
+        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="Subtopico" id="Subtopico" [(ngModel)]="this.subTopico.id" (click)="this.subTopicoNome()">
           <option value="">Subtópico</option>
-          <option *ngFor="let item of listaSubTopicos" value="{{item.id}}">{{item.nome}}</option>
+          <option *ngFor="let item of this.listaSubTopicos" value="{{item.id}}">{{item.nome}}</option>
         </select>
       </div>
     </div>
@@ -49,18 +49,18 @@
       <!-- Cargo -->
       <div class="Block">
         <label for="cargo" class="form-label mb-2 text-gray-700 px-2 font-bold">Cargo - ou cadastre um <a routerLink="/inserirDisciplina" class="text-rose-500"> novo</a>: </label>
-        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="cargo" id="cargo">
+        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="cargo" id="cargo" [(ngModel)]="this.cargo.id">
           <option value="">Cargo</option>
-          <option *ngFor="let item of listaCargos" value="{{item.id}}">{{item.nome}}</option>
+          <option *ngFor="let item of this.listaCargos" value="{{item.id}}">{{item.nome}}</option>
         </select>
       </div>
 
       <!-- Orgao -->
       <div class="block">
         <label for="orgao" class="form-label mb-2 text-gray-700 px-2 font-bold">Órgão - ou cadastre um <a routerLink="/inserirDisciplina" class="text-rose-500"> novo</a>: </label>
-        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="orgao" id="orgao">
+        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="orgao" id="orgao" [(ngModel)]="this.orgao.id">
           <option value="">Órgão</option>
-          <option *ngFor="let item of listaOrgoes" value="{{item.id}}">{{item.nome}}</option>
+          <option *ngFor="let item of this.listaOrgoes" value="{{item.id}}">{{item.nome}}</option>
         </select>
       </div>
     </div>
@@ -69,20 +69,29 @@
       <!-- Banca -->
       <div class="block">
         <label for="banca" class="form-label mb-2 text-gray-700 px-2 font-bold">Banca - ou cadastre um <a routerLink="/inserirDisciplina" class="text-rose-500"> novo</a>: </label>
-        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="banca" id="banca">
+        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="banca" id="banca" [(ngModel)]="this.banca.id">
           <option value="">Banca</option>
-          <option *ngFor="let item of listaBancas" value="{{item.id}}">{{item.nome}}</option>
+          <option *ngFor="let item of this.listaBancas" value="{{item.id}}">{{item.nome}}</option>
         </select>
       </div>
 
       <!-- Ano -->
       <div class="block">
         <label for="ano" class="form-label mb-2 text-gray-700 px-2 font-bold">Ano - ou cadastre um <a routerLink="/inserirDisciplina" class="text-rose-500"> novo</a>: </label>
-        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="ano" id="ano">
+        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="ano" id="ano" [(ngModel)]="this.ano.id">
           <option value="">Ano</option>
-          <option *ngFor="let item of listaAnos" value="{{item.id}}">{{item.nome}}</option>
+          <option *ngFor="let item of this.listaAnos" value="{{item.id}}">{{item.nome}}</option>
         </select>
       </div>
+    </div>
+
+    <div class= "block tamanho-area">
+      <!-- Area -->
+        <label for="area" class="form-label mb-2 text-gray-700 px-2 font-bold">Áreas de conhecimento - ou cadastre um <a routerLink="/inserirDisciplina" class="text-rose-500"> novo</a>: </label>
+        <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="area" id="area" [(ngModel)]="this.area.id">
+          <option value="">Áreas de conhecimento</option>
+          <option *ngFor="let item of this.listaArias" value="{{item.id}}">{{item.nome}}</option>
+        </select>
     </div>
 
   </form>
@@ -90,28 +99,28 @@
   <fieldset class="flex justify-around">
     <form class="py-8">
       <!-- Título -->
-      <p><label class="font-bold" for="Titulo">Título</label></p>
-      <textarea class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" id="Titulo" name="Titulo" rows="2" cols="80"></textarea>
+      <p><label class="font-bold form-label text-gray-700" for="Titulo">Título</label></p>
+      <textarea class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" id="Titulo" name="Titulo" rows="2" cols="80" [(ngModel)]="this.questao.titulo"></textarea>
 
       <!-- Texto -->
-      <p><label class="font-bold" for="Texto">Texto:</label></p>
-      <textarea class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" id="Texto" name="Texto" rows="10" cols="80"></textarea>
+      <p><label class="font-bold form-label text-gray-700" for="Texto">Texto:</label></p>
+      <textarea class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" id="Texto" name="Texto" rows="10" cols="80" [(ngModel)]="this.questao.descricao"></textarea>
 
       <!-- Gabarito -->
       <legend class="form-label mb-2 text-gray-700 font-bold" >Gabarito:</legend>
       <div>
-        <input class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300" type="radio" id="certa" name="Gabarito" value="true">
+        <input class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300" type="radio" id="certa" name="Gabarito" value="true" [(ngModel)]="this.questao.resposta">
         <label class="ml-2 text-sm font-medium text-gray-900" for="certa">Certa</label>
       </div>
 
       <div>
-        <input class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300" type="radio" id="errada" name="Gabarito" value="false">
+        <input class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300" type="radio" id="errada" name="Gabarito" value="false" [(ngModel)]="this.questao.resposta">
         <label class="ml-2 text-sm font-medium text-gray-900" for="errada">Errada</label>
       </div>
 
       <!-- Explicação -->
-      <p><label class="font-bold" for="Texto">Explicação:</label></p>
-      <textarea class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" id="Explicacao" name="Explicacao" rows="10" cols="80"></textarea>
+      <p><label class="font-bold form-label text-gray-700" for="Texto">Explicação:</label></p>
+      <textarea class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" id="Explicacao" name="Explicacao" rows="10" cols="80" [(ngModel)]="this.questao.explicacao"></textarea>
     </form>
 
   </fieldset>
@@ -120,8 +129,7 @@
     <div class="flex justify-center">
         <button type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Cancelar</button>
 
-      <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ">Enviar</button>
+      <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 " (click)="this.postarQuestao()">Enviar</button>
     </div>
   </div>
 </main>
-
