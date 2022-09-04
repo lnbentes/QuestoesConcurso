@@ -1,13 +1,13 @@
 <header>
-  <h1 class="text-gray-700">Adicionando Questão</h1>
+  <h1 class="titulo form-label mb-2 text-gray-700">Adiciona Questão</h1>
 </header>
 
 <main>
-  <form class= "bg-gray-500">
+  <form class= "">
 
-    <div class= "flex justify-center bg-gray-100">
+    <div class= "flex justify-center">
       <!-- Disciplina -->
-      <div class="bg-gray-200">
+      <div class="mr-5 mb-4">
         <label for="Disciplina" class="form-label mb-2 text-gray-700 px-2 font-bold">Disciplina - ou cadastre um <a routerLink="/inserirDisciplina" class="text-rose-500"> novo</a>: </label>
         <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="Disciplina" id="Disciplina" [(ngModel)]="this.nomeDisciplica">
           <option value="">Disciplina</option>
@@ -16,7 +16,7 @@
       </div>
 
       <!-- Assunto -->
-      <div class="block bg-gray-300">
+      <div class="block">
         <label for="Assunto" class="form-label mb-2 text-gray-700 px-2 font-bold">Assunto - ou cadastre um <a routerLink="/inserirAssunto" class="text-rose-500"> novo</a>: </label>
         <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="Assunto" id="Assunto" [(ngModel)]="this.nomeAssunto" (click)="this.assuntoaNome()">
           <option value="">Assunto</option>
@@ -27,7 +27,7 @@
 
     <div class= "flex justify-center">
       <!-- Topico -->
-      <div class="block bg-gray-300">
+      <div class="block mr-5 mb-4">
         <label for="Topico" class="form-label mb-2 text-gray-700 px-2 font-bold">Tópico - ou cadastre um <a routerLink="/inserirTopico" class="text-rose-500"> novo</a>: </label>
         <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="Topico" id="Topico" [(ngModel)]="this.nomeTopico" (click)="this.topicoNome()">
           <option value="">Tópico</option>
@@ -36,7 +36,7 @@
       </div>
 
       <!-- Subtópico -->
-      <div class="block bg-gray-200">
+      <div class="block">
         <label for="Subtopico" class="form-label mb-2 text-gray-700 px-2 font-bold">Subtópico - ou cadastre um <a routerLink="/inserirSubTopico" class="text-rose-500"> novo</a>: </label>
         <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="Subtopico" id="Subtopico" [(ngModel)]="this.subTopico.id" (click)="this.subTopicoNome()">
           <option value="">Subtópico</option>
@@ -47,7 +47,7 @@
 
     <div class= "flex justify-center">
       <!-- Cargo -->
-      <div class="Block">
+      <div class="Block mr-5  mb-4">
         <label for="cargo" class="form-label mb-2 text-gray-700 px-2 font-bold">Cargo - ou cadastre um <a routerLink="/inserirCargo" class="text-rose-500"> novo</a>: </label>
         <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="cargo" id="cargo" [(ngModel)]="this.cargo.id">
           <option value="">Cargo</option>
@@ -67,7 +67,7 @@
 
     <div class= "flex justify-center">
       <!-- Banca -->
-      <div class="block">
+      <div class="block mr-5">
         <label for="banca" class="form-label mb-2 text-gray-700 px-2 font-bold">Banca - ou cadastre um <a routerLink="/inserirBanca" class="text-rose-500"> novo</a>: </label>
         <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="banca" id="banca" [(ngModel)]="this.banca.id">
           <option value="">Banca</option>
