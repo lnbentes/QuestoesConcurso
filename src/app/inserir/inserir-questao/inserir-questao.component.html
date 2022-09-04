@@ -28,7 +28,7 @@
     <div class= "flex justify-center">
       <!-- Topico -->
       <div class="block bg-gray-300">
-        <label for="Topico" class="form-label mb-2 text-gray-700 px-2 font-bold">Tópico - ou cadastre um <a routerLink="/inserirDisciplina" class="text-rose-500"> novo</a>: </label>
+        <label for="Topico" class="form-label mb-2 text-gray-700 px-2 font-bold">Tópico - ou cadastre um <a routerLink="/inserirTopico" class="text-rose-500"> novo</a>: </label>
         <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="Topico" id="Topico" [(ngModel)]="this.nomeTopico" (click)="this.topicoNome()">
           <option value="">Tópico</option>
           <option *ngFor="let item of this.listaTopicos" value="{{item.nome}}">{{item.nome}}</option>

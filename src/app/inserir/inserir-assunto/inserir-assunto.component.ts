@@ -42,6 +42,7 @@ export class InserirAssuntoComponent implements OnInit {
     this.assuntoService.post(this.assunto).subscribe({next: (resp: Assunto) => {
         this.assunto = resp;
         alert("Enviada com sucesso!");
+        this.assunto = new Assunto();
       },
       error: erro => {
         if(erro.status == 500 || erro.status == 401 || erro.status == 400){

@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.titulo{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.tamanho{
+  width: 540px;
+  margin: 20px auto;
+}
