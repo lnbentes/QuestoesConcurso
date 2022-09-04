@@ -57,7 +57,7 @@
 
       <!-- Orgao -->
       <div class="block">
-        <label for="orgao" class="form-label mb-2 text-gray-700 px-2 font-bold">Órgão - ou cadastre um <a routerLink="/inserirDisciplina" class="text-rose-500"> novo</a>: </label>
+        <label for="orgao" class="form-label mb-2 text-gray-700 px-2 font-bold">Órgão - ou cadastre um <a routerLink="/inserirOrgao" class="text-rose-500"> novo</a>: </label>
         <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="orgao" id="orgao" [(ngModel)]="this.orgao.id">
           <option value="">Órgão</option>
           <option *ngFor="let item of this.listaOrgoes" value="{{item.id}}">{{item.nome}}</option>
