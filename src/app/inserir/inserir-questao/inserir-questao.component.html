@@ -48,7 +48,7 @@
     <div class= "flex justify-center">
       <!-- Cargo -->
       <div class="Block">
-        <label for="cargo" class="form-label mb-2 text-gray-700 px-2 font-bold">Cargo - ou cadastre um <a routerLink="/inserirDisciplina" class="text-rose-500"> novo</a>: </label>
+        <label for="cargo" class="form-label mb-2 text-gray-700 px-2 font-bold">Cargo - ou cadastre um <a routerLink="/inserirCargo" class="text-rose-500"> novo</a>: </label>
         <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="cargo" id="cargo" [(ngModel)]="this.cargo.id">
           <option value="">Cargo</option>
           <option *ngFor="let item of this.listaCargos" value="{{item.id}}">{{item.nome}}</option>
