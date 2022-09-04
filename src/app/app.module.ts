@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { InserirQuestaoComponent } from './inserir/inserir-questao/inserir-questao.component';
 import { InserirAnoComponent } from './inserir/inserir-ano/inserir-ano.component';
-import { InserirAreComponent } from './inserir/inserir-are/inserir-are.component';
+import { InserirAreaComponent } from './inserir/inserir-area/inserir-area.component';
 import { InserirAssuntoComponent } from './inserir/inserir-assunto/inserir-assunto.component';
 import { InserirBancaComponent } from './inserir/inserir-banca/inserir-banca.component';
 import { InserirCargoComponent } from './inserir/inserir-cargo/inserir-cargo.component';
@@ -23,7 +23,7 @@ import { InserirTopicoComponent } from './inserir/inserir-topico/inserir-topico.
     MenuComponent,
     InserirQuestaoComponent,
     InserirAnoComponent,
-    InserirAreComponent,
+    InserirAreaComponent,
     InserirAssuntoComponent,
     InserirBancaComponent,
     InserirCargoComponent,

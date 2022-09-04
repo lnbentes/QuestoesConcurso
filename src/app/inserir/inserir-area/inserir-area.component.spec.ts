@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InserirAreComponent } from './inserir-are.component';
+import { InserirAreComponent } from './inserir-area.component';
 
 describe('InserirAreComponent', () => {
   let component: InserirAreComponent;
