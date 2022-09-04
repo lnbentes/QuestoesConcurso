@@ -1,1 +1,17 @@
-<p>inserir-banca works!</p>
+<h1 class="titulo form-label text-gray-700">Adicionando Banca</h1>
+
+<main>
+  <form class="flex justify-center">
+    <div class= "tamanho">
+      <p><label class="font-bold form-label text-gray-700" for="Titulo">Nome</label></p>
+      <textarea class="block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 w-full" id="nome" name="nome" rows="2" [(ngModel)]="this.banca.nome"></textarea>
+    </div>
+  </form>
+  <div>
+    <div class="flex justify-center">
+        <button type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" routerLink="/inserirQuestao">Cancelar</button>
+
+      <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-lg shadow-blue-500/50 dark:shadow-lg dark:shadow-blue-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 ml-6" (click)="post()">Enviar</button>
+    </div>
+  </div>
+</main>
