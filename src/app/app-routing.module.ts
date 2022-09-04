@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { InserirAnoComponent } from './inserir/inserir-ano/inserir-ano.component';
 import { InserirAssuntoComponent } from './inserir/inserir-assunto/inserir-assunto.component';
 import { InserirBancaComponent } from './inserir/inserir-banca/inserir-banca.component';
 import { InserirCargoComponent } from './inserir/inserir-cargo/inserir-cargo.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: "inserirCargo", component: InserirCargoComponent},
   {path: "inserirOrgao", component: InserirOrgaoComponent},
   {path: "inserirBanca", component: InserirBancaComponent},
+  {path: "inserirAno", component: InserirAnoComponent},
 ];
 
 @NgModule({

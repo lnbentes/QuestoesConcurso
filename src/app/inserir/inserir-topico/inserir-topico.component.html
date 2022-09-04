@@ -5,7 +5,7 @@
 
   <div>
     <div class= "tamanho">
-      <label for="assunto" class="form-label mb-2 text-gray-700 px-2 font-bold">Assunto - ou cadastre um <a routerLink="/inserirAssunto " class="text-rose-500"> novo</a>: </label>
+      <label for="assunto" class="form-label mb-2 text-gray-700 px-2 font-bold">Assunto - ou cadastre um <a routerLink="/inserirAssunto" class="text-rose-500"> novo</a>: </label>
       <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 w-full" name="assunto" id="assunto" [(ngModel)]="this.assunto.id">
         <option value="">Assunto</option>
         <option *ngFor="let item of this.listaAssunto" value="{{item.id}}">{{item.nome}}</option>
