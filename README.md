@@ -7,7 +7,7 @@ Nesse projeto visa montar um site para facilitar os estudos para concurso, nele 
 3. Acesse o [http://localhost:4200/](http://localhost:4200/) para ver em funcionamento
 
 ## Rodar a aplicação remotamente:
-Em construção
+Acesse o site [https://concursolnbentes.netlify.app/inserirQuestao](https://concursolnbentes.netlify.app/inserirQuestao) para ver em funcionamento
 
 ## Como utilizar:
 

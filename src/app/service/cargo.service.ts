@@ -9,7 +9,8 @@ import { NomeModel } from '../model/NomeModel';
 })
 export class CargoService {
 
-  private url = "http://localhost:8080";
+  // private url = "http://localhost:8080";
+  private url = "https://dashboard.heroku.com";
 
   constructor(
     private http: HttpClient
