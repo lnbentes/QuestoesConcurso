@@ -11,7 +11,7 @@ import { NomeModel } from '../model/NomeModel';
 export class AnoService{
 
   // private url = "http://localhost:8080";
-  private url = "https://dashboard.heroku.com";
+  private url = "https://bpconcurso.herokuapp.com";
 
   constructor(
     private http: HttpClient

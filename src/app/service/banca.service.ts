@@ -10,7 +10,7 @@ import { NomeModel } from '../model/NomeModel';
 export class BancaService {
 
   // private url = "http://localhost:8080";
-  private url = "https://dashboard.heroku.com";
+  private url = "https://bpconcurso.herokuapp.com";
 
   constructor(
     private http: HttpClient

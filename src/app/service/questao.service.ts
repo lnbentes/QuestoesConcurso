@@ -9,7 +9,7 @@ import { Questao } from '../model/Questao';
 export class QuestaoService {
 
   // private url = "http://localhost:8080";
-  private url = "https://dashboard.heroku.com";
+  private url = "https://bpconcurso.herokuapp.com";
 
   constructor(
     private http: HttpClient
